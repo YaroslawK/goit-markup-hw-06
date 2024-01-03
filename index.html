@@ -21,13 +21,18 @@
   </head>
   <body class="body">
     <!-- Header -->
-    <header class="header hide">
+    <header class="header">
       <div class="container">
         <!-- Logo -->
         <nav class="nav">
           <a class="header-logo" href="./index.html"
             >Web<span class="logo-dark">Studio</span></a
           >
+          <button class="menu-btn" type="button" aria-label="Open menu button">
+            <svg class="menu-btn-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-heroicons-solid_menu"></use>
+            </svg>
+          </button>
 
           <!-- Navigation -->
           <ul class="navigation-list">
@@ -66,12 +71,12 @@
     <main class="main">
       <!-- Section1 -->
 
-      <!-- <section class="section-first hide">
+      <section class="section-first">
         <div class="main-title-container container">
           <h1 class="main-title">Effective Solutions for Your Business</h1>
           <button type="button" class="button">Order Service</button>
         </div>
-      </section> -->
+      </section>
       <!-- Section2 -->
 
       <section class="section-second hide">
@@ -131,7 +136,7 @@
       </section>
       <!-- Section3 -->
 
-      <section class="section-third hide">
+      <section class="section-third">
         <div class="container">
           <h2 class="title-team">Our Team</h2>
           <ul class="team-list">
@@ -312,7 +317,7 @@
       </section>
       <!-- section 4 -->
 
-      <section class="section-fourth">
+      <section class="section-fourth hide">
         <div class="container">
           <h2 class="portfolio">Our Portfolio</h2>
           <ul class="portfolio-list">
@@ -593,6 +598,68 @@
           <button class="modal-send" type="submit">Send</button>
         </form>
       </div>
+    </div>
+    <!-- Mobile menu -->
+    <div class="mobile-menu hide">
+      <button class="menu-btn">
+        <svg class="menu-btn-icon" width="8" height="8">
+          <use href="./images/icons.svg#icon-close-black"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu-list">
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link current" href="">Studio</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link" href="">Portfolio</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link" href="">Contacts</a>
+        </li>
+      </ul>
+      <ul class="mobile-menu-contact-list">
+        <li class="mobile-menu-contact-item">
+          <a href="tel:+110001111111" class="mobile-menu-contact accent"
+            >+11 (000) 111-11-11</a
+          >
+        </li>
+        <li class="mobile-menu-contact-item">
+          <a href="mailto:info@devstudio.com" class="mobile-menu-contact"
+            >info@devstudio.com</a
+          >
+        </li>
+      </ul>
+      <ul class="mobile-menu-socials">
+        <li class="social-media-item">
+          <a href="instagram.com" class="team-social-media-link">
+            <svg class="social-media-icon" width="16" height="16">
+              <use href="./images/icons.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-media-item">
+          <a href="twitter.com" class="team-social-media-link">
+            <svg class="social-media-icon" width="16" height="16">
+              <use href="./images/icons.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-media-item">
+          <a href="facebook.com" class="team-social-media-link">
+            <svg class="social-media-icon" width="16" height="16">
+              <use href="./images/icons.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-media-item">
+          <a href="linkedin.com" class="team-social-media-link">
+            <svg class="social-media-icon" width="16" height="16">
+              <use href="./images/icons.svg#icon-linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
     </div>
   </body>
 </html>
