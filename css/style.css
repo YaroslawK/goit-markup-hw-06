@@ -361,8 +361,6 @@ color: #FFF;
     text-transform: capitalize;
     margin-bottom: 72px;
     text-align: center;
-
-
 }
 
 @media only screen and (min-width: 768px) {
@@ -800,18 +798,38 @@ color: #4D5AE5;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     display: inline-block;
-    margin-bottom: 16px;
+    margin-bottom: 17.5px;
     margin-top: 0;
     margin-right: 0;
 }
 
+@media only screen and (max-width: 767.98px) {
+.footer-link {
+  
+  }
+}
+
 .footer-container{
 display: flex;
-align-items: baseline;
+    align-items: baseline;
+}
+
+@media only screen and (max-width: 767.98px) {
+.footer-container {
+    display: block;
+   text-align: center;
+  }
 }
 
 .footer-logo{
+    margin-bottom: 72px;
+}
+
+@media only screen and (min-width: 1158px) {
+.footer-logo {
     margin-right: 120px;
+    margin-bottom: 0;
+  }
 }
 
 
@@ -822,6 +840,7 @@ align-items: baseline;
         line-height: 1.5;
         letter-spacing: 0.02em;
         width: 264px;
+        text-align: left;
 }
 
 .social-media-title {
@@ -833,8 +852,9 @@ color: #FFF;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    margin-bottom: 16px;
+    margin-bottom: 16px;   
 }
+
 
 .social-media-item{
     width: 40px;
@@ -907,7 +927,14 @@ color: #FFF;
             fill: #f4f4fd;
 }
 .social-media{
-margin-right: 80px;
+margin-bottom: 72px;
+}
+
+@media only screen and (min-width: 1158px) {
+.social-media {
+    margin-right: 80px;
+    margin-bottom: 0;
+  }
 }
 
 /* footer-subscribe */
@@ -923,14 +950,22 @@ margin-right: 80px;
         font-weight: 500;
         line-height: 1.5;
         letter-spacing: 0.02em;
+
 }
 
-.subscribe-form {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 24px;
 
+.subscribe-form {
+ 
+    display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 24px;
+}
+
+@media only screen and (max-width: 767.98px) {
+.subscribe-form  {
+display: block;
+  }
 }
 
 .subscribe-form-field {
@@ -953,6 +988,13 @@ margin-right: 80px;
         line-height: 2;
         letter-spacing: 0.04em;
 
+}
+
+@media only screen and (max-width: 767.98px) {
+.subscribe-form-input {
+    width: 100%;
+    margin-bottom: 16px;
+  }
 }
 
 .subscribe-form-input::placeholder{
