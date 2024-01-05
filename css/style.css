@@ -13,6 +13,7 @@ h1,h2,h3,h4,h5,h6,p{
 img{
     display: block;
     max-width: 100%;
+    height: auto;
 }
 
 input {
@@ -327,17 +328,36 @@ font-weight: 400;
     margin-right: auto;
     background-image: linear-gradient(rgba(46, 47, 66, 0.70),
             rgba(46, 47, 66, 0.70)),
-            url(../images/bghero.jpg);
+            url(../images/bghero_mob.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 50%;
 }
 
-@media only screen and (min-width: 768px) {
+@media (min-resolution:192dpi){
+    .section-first{
+        background-image: linear-gradient(rgba(46, 47, 66, 0.70),
+                    rgba(46, 47, 66, 0.70)),
+                url(../images/bghero_mob@2x.jpg);
+    }
+}
+
+@media only screen and (min-width: 768px){
 .section-first  {
     padding: 112px 136px;
     max-width: 768px;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.70),
+                    rgba(46, 47, 66, 0.70)),
+                url(../images/bghero_tab.jpg);
   }
+}
+
+@media only screen and (min-width: 768px) and (min-resolution:192dpi){
+    .section-first {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.70),
+                rgba(46, 47, 66, 0.70)),
+            url(../images/bghero_tab@2x.jpg);
+    }
 }
 
 @media only screen and (min-width: 1158px) {
@@ -345,9 +365,19 @@ font-weight: 400;
             padding-top: 188px;
             padding-bottom: 188px;
             max-width: 1440px;
+                background-image: linear-gradient(rgba(46, 47, 66, 0.70),
+                            rgba(46, 47, 66, 0.70)),
+                        url(../images/bghero_desk.jpg);
   }
 }
 
+@media only screen and (min-width: 1158px) and (min-resolution:192dpi) {
+    .section-first {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.70),
+                rgba(46, 47, 66, 0.70)),
+            url(../images/bghero_desk@2x.jpg);
+    }
+}
 
 .main-title{
 color: #FFF;
@@ -543,6 +573,9 @@ flex-wrap: wrap;
 
 
 
+
+
+
 @media screen and (min-width:1158px) {
     .section-third{
     padding-top: 120px;
@@ -603,12 +636,11 @@ flex-wrap: wrap;
     background: #FFF;
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
      0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
-    width: 100%;
 }
 
 @media screen and (min-width:768px) {
     .team-card {
-           max-width: 256px;
+           max-width: 264px;
         }
     }
 
