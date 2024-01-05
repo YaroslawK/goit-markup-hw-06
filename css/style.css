@@ -1351,6 +1351,7 @@ color: rgba(46, 47, 66, 0.40);
 
 .form-agreement {
     display: flex;
+    align-items: center;
 
 
     color: #8E8F99;
@@ -1451,6 +1452,11 @@ background-color: #404BBF;
     justify-content: center;
     align-items: center;
     margin-left: auto;
+
+    border: none;
+    background-color: transparent;
+   
+
 }
 
 @media only screen and (min-width: 768px) {
@@ -1498,7 +1504,7 @@ background-color: #404BBF;
     height: 24px;
 
         border-radius: 50%;
-            /* background-color: #E7E9FC; */
+    
         
             width: 24px;
             height: 24px;
