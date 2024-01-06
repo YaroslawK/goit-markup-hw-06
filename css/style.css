@@ -63,6 +63,12 @@ ul{
         
 }
 
+@media only screen and (max-width: 767.98px) {
+.header  {
+    padding: 16px 0;
+  }
+}
+
 .header .container{
     display: flex;
     justify-content: space-between;
@@ -71,15 +77,19 @@ ul{
 .nav{
     display: flex;
     align-items: center;
-    flex-grow: 1;
+    
     justify-content: space-between;
 }
 
 @media only screen and (min-width: 768px) {
 .nav {
-    margin-right: 121px;
+    /* margin-right: 121px; */
+    margin-right: auto;
+    
   }
 }
+
+
 
 
 
@@ -93,22 +103,24 @@ ul{
         line-height: 1.17;
         letter-spacing: 0.03em;
         text-transform: uppercase;
-    margin-top: 17.5px;
-    margin-bottom: 17.5px;
+
+       margin-right: 149px;
+
 }
 
 @media only screen and (min-width: 768px) {
 .header-logo  {
-    margin-top: 25.5px;
-    margin-bottom: 25.5px;
+    margin-right: 120px;
   }
 }
 
 @media only screen and (min-width: 1158px) {
-.header-logo {  
-    margin-right: 149px;     
+.header-logo {
+    margin-right: 76px;
   }
 }
+
+
 
 .logo-dark {
     color: #2e2f42;
@@ -297,8 +309,12 @@ font-weight: 400;
 
 /* main */
 
-.main-title-container{
-  
+
+
+@media only screen and (max-width: 767.98px) {
+.main-title-container {
+        padding: 0 75px;
+    }
 }
 
 .main{
@@ -312,7 +328,7 @@ font-weight: 400;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 72px 16px;
+    padding: 72px 0;
     margin-left: auto;
     margin-right: auto;
     background-image: linear-gradient(rgba(46, 47, 66, 0.70),
@@ -333,7 +349,7 @@ font-weight: 400;
 
 @media only screen and (min-width: 768px){
 .section-first  {
-    padding: 112px 136px;
+    padding: 112px 0;
     max-width: 768px;
         background-image: linear-gradient(rgba(46, 47, 66, 0.70),
                     rgba(46, 47, 66, 0.70)),
@@ -380,6 +396,7 @@ color: #FFF;
     text-transform: capitalize;
     margin-bottom: 72px;
     text-align: center;
+   
 }
 
 @media only screen and (min-width: 768px) {
@@ -389,6 +406,7 @@ color: #FFF;
         line-height: 1.07em;
         max-width: 496px;
         align-items: center;
+       
   }
 }
 
@@ -475,8 +493,7 @@ color: #FFF;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    gap: 24px;
+    gap: 72px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -484,11 +501,24 @@ color: #FFF;
 
 flex-direction: row;
 flex-wrap: wrap;
+gap: 72px 24px;
   }
 }
 
 .section-second-li{
-    width: 264px;
+    width: 288px;
+}
+
+@media only screen and (min-width: 768px) {
+.section-second-li {
+        width: 356px;
+    }
+}
+
+@media only screen and (min-width: 1158px) {
+.section-second-li {
+        width: 264px;
+    }
 }
 
 
@@ -504,9 +534,13 @@ flex-wrap: wrap;
         line-height: 1.11;
         letter-spacing: 0.02em;
         text-transform: capitalize;
-        margin-bottom: 8px;
-    
-       
+        margin-bottom: 8px;       
+}
+
+@media only screen and (min-width: 768px) {
+.section-second-title  {
+    text-align: left;
+  }
 }
 
 @media only screen and (min-width: 1158px) {
@@ -514,6 +548,8 @@ flex-wrap: wrap;
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2;
+
+
   }
 }
 
@@ -525,6 +561,7 @@ flex-wrap: wrap;
         line-height: 1.5;
         letter-spacing: 0.02em;
         font-weight: 500;
+        
 }
 
 @media only screen and (min-width: 1158px) {
@@ -867,8 +904,7 @@ display: flex;
 
 @media only screen and (min-width: 768px) and (max-width: 1157.98px) {
 .footer-container {
-    padding-left: 108px;
-    padding-right: 164px;
+    width: 584px;
     flex-wrap: wrap;
         gap: 72px 24px;
   }
@@ -878,10 +914,15 @@ display: flex;
     margin-bottom: 72px;
 }
 
+@media only screen and (min-width: 768px) {
+.footer-logo {
+    margin-bottom: 0;
+  }
+}
+
 @media only screen and (min-width: 1158px) {
 .footer-logo {
     margin-right: 120px;
-    margin-bottom: 0;
   }
 }
 
@@ -983,10 +1024,16 @@ color: #FFF;
 margin-bottom: 72px;
 }
 
+@media only screen and (min-width: 768px) {
+.social-media {
+    margin-bottom: 0;
+  }
+}
+
 @media only screen and (min-width: 1158px) {
 .social-media {
     margin-right: 80px;
-    margin-bottom: 0;
+   
   }
 }
 
@@ -1416,6 +1463,7 @@ background-color: #404BBF;
 
     border: none;
     background-color: transparent;
+    padding: 0;
    
 
 }
